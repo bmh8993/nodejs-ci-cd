@@ -12,7 +12,7 @@ const app = express();
 redis_client.set("number", 0);
 
 app.get("/", (req, res) => {
-  redis_client("number", (err, number) => {
+  redis_client.get("number", (err, number) => {
     redis_client.set("number", parseInt(number) + 1);
     res.send("Number is going up " + number);
   });
