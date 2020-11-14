@@ -3,3 +3,7 @@
 - node.js
 - docker
 - jenkins
+
+## 서버 시작
+
+`npm run start`
